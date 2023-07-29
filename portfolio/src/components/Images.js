@@ -1,0 +1,1 @@
+export const QA = require('../assets/Images/qa.JPG');

@@ -13,13 +13,14 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #21325e;
+    background: linear-gradient(128deg, #21325e 50%, transparent 50%), url('../assets/Images/myself.jpg');
+    background-size: 100% 100%, 49% 100%;
     color: #f0f0f0;
   }
   
   .about h2 {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 80px;
+    font-size: 70px;
     color: #e9d35b;
     height: 50px;
   }

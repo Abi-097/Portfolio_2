@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='home'> 
     <div className='about'>
-    <h2>Hey, My name is Abishek Mahen</h2>
+    <h2>Hey, My name is Abishek Mahenderaraja</h2>
     <div className='prompt'>
       <p> software developer </p>  
       <GitHubIcon/> <LinkedInIcon/> <EmailIcon/> <WhatsAppIcon/>

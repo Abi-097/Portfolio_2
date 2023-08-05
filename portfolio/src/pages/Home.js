@@ -12,7 +12,7 @@ export default function Home() {
     <div className='about'>
     <h2>Hey, My name is Abishek Mahenderaraja</h2>
     <div className='prompt'>
-      <p> software developer </p>  
+      <p> Software Developer </p>  
       <SocialLinks/>
       {/* <GitHubIcon/> <LinkedInIcon/> <EmailIcon/> <WhatsAppIcon/> */}
     </div>

@@ -34,6 +34,11 @@
     margin: 5px;
     color: white;
   }
+
+  .prompt p{
+    color:#2e2f32;
+    font-weight: 500;
+  }
   
   .skills {
     font-size: 35px;

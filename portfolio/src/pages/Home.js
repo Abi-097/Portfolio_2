@@ -4,6 +4,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import "../styles/Home.css"
+import SocialLinks from '../components/SocialLinks';
 
 export default function Home() {
   return (
@@ -12,7 +13,8 @@ export default function Home() {
     <h2>Hey, My name is Abishek Mahenderaraja</h2>
     <div className='prompt'>
       <p> software developer </p>  
-      <GitHubIcon/> <LinkedInIcon/> <EmailIcon/> <WhatsAppIcon/>
+      <SocialLinks/>
+      {/* <GitHubIcon/> <LinkedInIcon/> <EmailIcon/> <WhatsAppIcon/> */}
     </div>
     </div>
     <div className='skills'>
@@ -28,7 +30,7 @@ export default function Home() {
 </li>
 <li className='item'> 
 <h2> Languages </h2>
-    <span>JavaScript, Python</span>
+    <span>JavaScript, Python, PHP</span>
 </li>
     </ol>
 </div>

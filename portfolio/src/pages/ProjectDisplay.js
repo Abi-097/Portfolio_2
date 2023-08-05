@@ -12,12 +12,16 @@ export default function ProjectDisplay() {
     function handleButtonClick() {
       window.location.href = project.url;
     }
+
+    function handleGitClick() {
+      window.location.href = project.git;
+    }
   return (
     <div className='project'>
     <h1>{project.name}</h1>
     <img src={project.image}/>
     <div className='image_button'>
-    <GitHubIcon/>&nbsp;&nbsp;<Button variant="contained" color="info" onClick={handleButtonClick}> <img src={Deploy} className='button_image'/> &nbsp; Deploy</Button>
+    <GitHubIcon onClick={handleGitClick} id="projectDisplay-git"/>&nbsp;&nbsp;<Button variant="contained" color="info" onClick={handleButtonClick}> <img src={Deploy} className='button_image'/> &nbsp; Deploy</Button>
     </div>
     <p>
     <b>Skills:</b> {project.skills}

@@ -39,3 +39,7 @@
     display: flex;
     align-items: center;
   }
+
+  #projectDisplay-git{
+    cursor: pointer;
+  }

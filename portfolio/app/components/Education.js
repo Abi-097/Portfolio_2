@@ -74,9 +74,9 @@ const TimelineSection = styled.div`
   }
 `;
 
-const Education = () => {
+const Education = ({ key }) => {
   return (
-    <Container id="education">
+    <Container key={key} id="education">
       <Wrapper>
         <Title>Education</Title>
         <Desc>
@@ -86,9 +86,9 @@ const Education = () => {
         <TimelineSection>
           <Timeline>
             {education.map((education, index) => (
-              <TimelineItem>
+              <TimelineItem key={index}>
                 <TimelineContent sx={{ py: "12px", px: 2 }}>
-                  <EducationCard education={education} />
+                  <EducationCard key={index} education={education} />
                 </TimelineContent>
                 <TimelineSeparator>
                   <TimelineDot variant="outlined" color="secondary" />

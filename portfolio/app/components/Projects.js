@@ -137,11 +137,11 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="web app"
               onClick={() => setToggle("web app")}
             >
-              WEB APP'S
+              WEB APP&apos;S
             </ToggleButton>
           ) : (
             <ToggleButton value="web app" onClick={() => setToggle("web app")}>
-              WEB APP'S
+              WEB APP&apos;S
             </ToggleButton>
           )}
           <Divider />
@@ -151,14 +151,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="android app"
               onClick={() => setToggle("android app")}
             >
-              ANDROID APP'S
+              ANDROID APP&apos;S
             </ToggleButton>
           ) : (
             <ToggleButton
               value="android app"
               onClick={() => setToggle("android app")}
             >
-              ANDROID APP'S
+              ANDROID APP&apos;S
             </ToggleButton>
           )}
           <Divider />
@@ -181,8 +181,9 @@ const Projects = ({ openModal, setOpenModal }) => {
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
+            projects.map((project, index) => (
               <ProjectCards
+                key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}
@@ -190,8 +191,9 @@ const Projects = ({ openModal, setOpenModal }) => {
             ))}
           {projects
             .filter((item) => item.category == toggle)
-            .map((project) => (
+            .map((project, index) => (
               <ProjectCards
+                key={index}
                 project={project}
                 openModal={openModal}
                 setOpenModal={setOpenModal}

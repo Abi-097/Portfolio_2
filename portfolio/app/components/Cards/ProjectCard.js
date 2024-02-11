@@ -120,13 +120,16 @@ const Avatar = styled.img`
   border: 3px solid ${({ theme }) => theme.card};
 `;
 
-const ProjectCards = ({ project, setOpenModal }) => {
+const ProjectCards = ({ project, setOpenModal, key }) => {
   return (
-    <Card onClick={() => setOpenModal({ state: true, project: project })}>
-      <Image src={project.image} />
+    <Card
+      key={key}
+      onClick={() => setOpenModal({ state: true, project: project })}
+    >
+      <Image src={project.image} alt={project.image} />
       <Tags>
         {project.tags?.map((tag, index) => (
-          <Tag>{tag}</Tag>
+          <Tag key={index}>{tag}</Tag>
         ))}
       </Tags>
       <Details>

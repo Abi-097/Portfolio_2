@@ -212,7 +212,7 @@ const ProjectDetails = ({ openModal, setOpenModal }) => {
               <Label>Members</Label>
               <Members>
                 {project?.member.map((member, index) => (
-                  <Member>
+                  <Member key={index}>
                     <MemberImage src={member.img} />
                     <MemberName key={index}>{member.name}</MemberName>
                     <a

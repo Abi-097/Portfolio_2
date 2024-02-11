@@ -1,14 +1,19 @@
 "use client";
 import Image from "next/image";
 import style from "./page.module.css";
-
+import { useState, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
 // import { ThemeProvider } from "@emotion/react";
-import { darkTheme } from "./utils/Themes";
+import { darkTheme, lightTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
+import Projects from "./components/Projects";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import ProjectDetails from "./components/ProjectDetails";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -32,15 +37,26 @@ const Wrapper = styled.div`
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
 export default function Home() {
+  const [darkMode, setDarkMode] = useState(true);
+  const [openModal, setOpenModal] = useState({ state: false, project: null });
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <Navbar />
       <Body>
         <Hero />
         <Wrapper>
           <Skills />
-          <Education />
+          <Experience />
         </Wrapper>
+        <Projects openModal={openModal} setOpenModal={setOpenModal} />
+        <Wrapper>
+          <Education />
+          <Contact />
+        </Wrapper>
+        <Footer />
+        {openModal.state && (
+          <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+        )}
       </Body>
     </ThemeProvider>
   );

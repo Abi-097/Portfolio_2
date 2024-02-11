@@ -246,11 +246,11 @@ const Navbar = () => {
           />
         </MobileIcon>
         <NavItems>
-          <NavItem>About</NavItem>
-          <NavItem>Skills</NavItem>
-          <NavItem href="#edu">Experience</NavItem>
-          <NavItem>Projects</NavItem>
-          <NavItem>Education</NavItem>
+          <NavItem href="#about">About</NavItem>
+          <NavItem href="#skills">Skills</NavItem>
+          <NavItem href="#experience">Experience</NavItem>
+          <NavItem href="#projects">Projects</NavItem>
+          <NavItem href="#education">Education</NavItem>
         </NavItems>
         <ButtonContainer>
           <GitHubButton>GitHub Profile</GitHubButton>

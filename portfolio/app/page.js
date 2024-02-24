@@ -1,9 +1,8 @@
 "use client";
-import Image from "next/image";
+
 import style from "./page.module.css";
 import { useState, useEffect } from "react";
 import styled, { ThemeProvider } from "styled-components";
-// import { ThemeProvider } from "@emotion/react";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -14,6 +13,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectDetails from "./components/ProjectDetails";
+import { FallingLines } from "react-loader-spinner";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -36,28 +36,61 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
 `;
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   const [openModal, setOpenModal] = useState({ state: false, project: null });
+  const [loader, setLoader] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoader(false);
+    }, 5000);
+
+    return () => clearTimeout(timeout);
+  }, []);
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Navbar />
-      <Body>
-        <Hero />
-        <Wrapper>
-          <Skills />
-          <Experience />
-        </Wrapper>
-        <Projects openModal={openModal} setOpenModal={setOpenModal} />
-        <Wrapper>
-          <Education />
-          <Contact />
-        </Wrapper>
-        <Footer />
-        {openModal.state && (
-          <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-        )}
-      </Body>
+      {loader ? (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "100vh",
+          }}
+        >
+          <FallingLines
+            type="TailSpin"
+            color="#00BFFF"
+            height={80}
+            width={80}
+          />
+        </div>
+      ) : (
+        <>
+          <Navbar />
+          <Body>
+            <Hero />
+            <Wrapper>
+              <Skills />
+              <Experience />
+            </Wrapper>
+            <Projects openModal={openModal} setOpenModal={setOpenModal} />
+            <Wrapper>
+              <Education />
+              <Contact />
+            </Wrapper>
+            <Footer />
+            {openModal.state && (
+              <ProjectDetails
+                openModal={openModal}
+                setOpenModal={setOpenModal}
+              />
+            )}
+          </Body>
+        </>
+      )}
     </ThemeProvider>
   );
 }

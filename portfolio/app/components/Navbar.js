@@ -260,41 +260,52 @@ const Navbar = () => {
       </NavContainer>
       {isOpen && (
         <MobileMenu isOpen={isOpen}>
-          <MobileLink
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            About
-          </MobileLink>
-          <MobileLink
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            Skills
-          </MobileLink>
-          <MobileLink
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            Experience
-          </MobileLink>
-          <MobileLink
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            Projects
-          </MobileLink>
-          <MobileLink
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            Education
-          </MobileLink>
+          <Link href="#about">
+            <MobileLink
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              About
+            </MobileLink>
+          </Link>
+          <Link href="#skills">
+            <MobileLink
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Skills
+            </MobileLink>
+          </Link>
+          <Link href="#experience">
+            <MobileLink
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Experience
+            </MobileLink>
+          </Link>
+          <Link href="#projects">
+            <MobileLink
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Projects
+            </MobileLink>
+          </Link>
+          <Link href="#education">
+            <MobileLink
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              Education
+            </MobileLink>
+          </Link>
+
           <GitHubButton
             style={{
               padding: "10px 16px",

@@ -58,6 +58,7 @@ export default function Home() {
             justifyContent: "center",
             alignItems: "center",
             height: "100vh",
+            backgroundColor: "#191924",
           }}
         >
           <FallingLines

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { DiCodrops } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useTheme } from "styled-components";
+import { Bio } from "../data/constants";
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.card_light};
   height: 80px;
@@ -86,8 +87,6 @@ const NavItem = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-  width: 80%;
-  height: 100%;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -102,7 +101,8 @@ const GitHubButton = styled.a`
   justify-content: center;
   display: flex;
   align-items: center;
-  height: 70%;
+  height: 3rem;
+  width: 10rem;
   border-radius: 20px;
   color: ${({ theme }) => theme.primary};
   cursor: pointer;
@@ -255,7 +255,9 @@ const Navbar = () => {
           <NavItem href="#education">Education</NavItem>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton>GitHub Profile</GitHubButton>
+          <Link href={Bio.github} target="_blank">
+            <GitHubButton>GitHub Profile</GitHubButton>
+          </Link>{" "}
         </ButtonContainer>
       </NavContainer>
       {isOpen && (
@@ -305,17 +307,18 @@ const Navbar = () => {
               Education
             </MobileLink>
           </Link>
-
-          <GitHubButton
-            style={{
-              padding: "10px 16px",
-              background: `${theme.primary}`,
-              color: "white",
-              width: "max-content",
-            }}
-          >
-            Github Profile
-          </GitHubButton>
+          <Link href={Bio.github} target="_blank">
+            <GitHubButton
+              style={{
+                padding: "10px 16px",
+                background: `${theme.primary}`,
+                color: "white",
+                width: "max-content",
+              }}
+            >
+              Github Profile
+            </GitHubButton>
+          </Link>
         </MobileMenu>
       )}
     </Nav>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Snackbar } from "@mui/material";
+import { Snackbar, SnackbarContent } from "@mui/material";
 
 const Container = styled.div`
   display: flex;
@@ -132,43 +132,73 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // emailjs.sendForm('service_tox7kqs', 'template_nv7k7mj', form.current, 'SybVGsYS52j2TfLbi')
-    //   .then((result) => {
-    //     setOpen(true);
-    //     form.current.reset();
-    //   }, (error) => {
-    //     console.log(error.text);
-    //   });
+    emailjs
+      .sendForm(
+        "service_np3vdof",
+        "template_mmxfqpd",
+        form.current,
+        "7347l2W9TkkATl3ah"
+      )
+      .then(
+        (result) => {
+          setOpen(true);
+          form.current.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
     <Container>
       <Wrapper>
         <Title>Contact</Title>
-        <Desc>
-          Feel free to reach out to me for any questions or opportunities!
-        </Desc>
+        <Desc>Feel free to reach out to me for any questions!!!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
           <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />
+          <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
         </ContactForm>
-        <Snackbar
+        {/* <SnackbarContent
           open={open}
           autoHideDuration={6000}
           onClose={() => setOpen(false)}
           message="Email sent successfully!"
-          severity="success"
-        />
+          sx={{
+            width: "100%",
+            "& .MuiSnackbarContent-message": {
+              display: "flex",
+              alignItems: "center",
+            },
+            "& .MuiSnackbarContent-action": {
+              paddingLeft: "8px",
+            },
+            "& .timer-bar": {
+              height: "4px",
+              backgroundColor: "#4caf50",
+              position: "absolute",
+              bottom: 0,
+              left: 0,
+              width: "100%",
+              animation: "$timer-animation 6000ms linear forwards",
+            },
+            "@keyframes timer-animation": {
+              "0%": { width: "100%" },
+              "100%": { width: "0%" },
+            },
+          }}
+        >
+          <div className="timer-bar"></div>
+        </SnackbarContent> */}
       </Wrapper>
     </Container>
   );

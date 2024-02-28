@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroBgAnimation from "./HeroAnimations";
-
+import Count from "./Count";
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -215,6 +215,7 @@ const Hero = () => {
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
+            <Count />
             <Title>
               Hi, I am <br /> {Bio.name}
             </Title>

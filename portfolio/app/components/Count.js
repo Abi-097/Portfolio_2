@@ -5,7 +5,19 @@ const Count = () => {
   const [visitCount, setVisitCount] = useState(0);
 
   useEffect(() => {
-    setVisitCount((prevCount) => prevCount + 1);
+    if (typeof window !== "undefined") {
+      const storedCount = localStorage.getItem("visitCount");
+
+      if (storedCount) {
+        setVisitCount(parseInt(storedCount));
+      }
+
+      setVisitCount((prevCount) => {
+        const newCount = prevCount + 1;
+        localStorage.setItem("visitCount", newCount.toString());
+        return newCount;
+      });
+    }
   }, []);
   return (
     <div>

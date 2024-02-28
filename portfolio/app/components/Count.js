@@ -11,7 +11,11 @@ const Count = () => {
     <div>
       <Button
         variant="contained"
-        style={{ backgroundColor: "#344955", color: "#FFFFFF" }}
+        style={{
+          backgroundColor: "#344955",
+          color: "#FFFFFF",
+          fontSize: "10px",
+        }}
       >
         Profile views {visitCount}
       </Button>

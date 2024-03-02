@@ -272,7 +272,7 @@ export const projects = [
     description:
       "This is a site for the NGO: Neurodevelopment and Autism in South Asia.",
 
-    image: " ",
+    image: "/namasthe.PNG",
     tags: [
       "ReactJS",
       "HTML",
@@ -285,22 +285,11 @@ export const projects = [
       "Postman",
       "Rest API",
     ],
-    category: "web app",
+    category: "web_app",
     github: "",
     webapp: "https://namastesl.com",
   },
-  {
-    id: 9,
-    title: "Vehicle showcase - [on development]",
-    date: "Jan 2024",
-    description:
-      "This is a vehicle showroom site created using Next.js and Tailwind CSS.",
-    image: " ",
-    tags: ["HTML", "CSS", "JS", "NextJS", "Tailwind CSS"],
-    category: "web app",
-    github: "https://github.com/Abi-097/travel_app.git",
-    webapp: "",
-  },
+
   {
     id: 1,
     title: "LMS - Education - Admin panel",
@@ -320,7 +309,7 @@ export const projects = [
       "Postman",
       "API",
     ],
-    category: "web app",
+    category: "web_app",
     github: " ",
     webapp: " ",
   },
@@ -331,7 +320,8 @@ export const projects = [
     description:
       "It is a restaurant application that can be used by the admin to track products and customer purchases, seller and customer details",
 
-    image: "",
+    image:
+      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
     tags: [
       "ReactJS",
       "HTML",
@@ -343,7 +333,7 @@ export const projects = [
       "Postman",
       "API",
     ],
-    category: "web app",
+    category: "web_app",
     github: " ",
     webapp: " ",
     // member: [
@@ -369,9 +359,9 @@ export const projects = [
     description:
       "It is an application made with React.js, Bootstrap, and Rapid API. Using the GET method from Rapid API, it validates answers and returns a score out of 20. There is also a time limit; each question needs to be submitted within 3 minutes, or it may be considered a wrong answer. Finally, the result is displayed.",
 
-    image: " ",
+    image: "/questionfrom.PNG",
     tags: ["ReactJS", "HTML", "CSS", "JS", "Axios", "Bootstrap", "API"],
-    category: "web app",
+    category: "web_app",
     github: "https://github.com/Abi-097/Question_Form.git",
     webapp: "https://question-form-five.vercel.app/",
 
@@ -397,9 +387,9 @@ export const projects = [
     date: "Jan 2023",
     description:
       "The app is built with ReactJS and pulls movie data from an API using the get method. Clicking on a movie takes you to a specific page.",
-    image: " ",
+    image: "/imdb.PNG",
     tags: ["ReactJS", "HTML", "CSS", "JS", "Axios", "Bootstrap", "Npm", "API"],
-    category: "android app",
+    category: "web_app",
     github: "https://github.com/Abi-097/Clone-IMDB.git",
     webapp: "https://clone-imdb-a5at.vercel.app/",
   },
@@ -409,9 +399,9 @@ export const projects = [
     date: "Dec 2022",
     description:
       "This is a NIC generator that shows date of birth and gender when a NIC number is inputted.",
-    image: " ",
+    image: "/nictracker.PNG",
     tags: ["ReactJS", "HTML", "CSS", "JS", "NPM"],
-    category: "web app",
+    category: "web_app",
     github: "https://github.com/Abi-097/NIC_tracker.git",
     webapp: "https://nic-tracker.vercel.app/",
   },
@@ -420,12 +410,26 @@ export const projects = [
     title: "My Portfolio",
     date: "Dec 2022",
     description: "My personal portfolio with my information.",
-    image: " ",
+    image: "/portfolio.PNG",
 
     tags: ["ReactJS", "HTML", "CSS", "JS", "NPM", "MUI"],
-    category: "web app",
+    category: "web_app",
     github: "https://github.com/Abi-097/portfolio-2.1",
     webapp: "https://portfolio-2-1-motl.vercel.app/",
+  },
+  {
+    id: 12,
+    title:
+      "The problem I encountered when deploying the build — the white screen.",
+    date: "Feb 2024",
+    description:
+      "When building our React application, I encountered this problem and found a solution for it.",
+    image: "/blog1.PNG",
+    tags: [""],
+    category: "blog",
+    github: "",
+    webapp:
+      "https://medium.com/@abishekm84/the-problem-i-encountered-when-deploying-the-build-the-white-screen-5dc3aeea28f4",
   },
 ];
 

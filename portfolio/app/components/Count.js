@@ -1,24 +1,24 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Button from "@mui/material/Button";
-
+import Cookies from "js-cookie";
 const Count = () => {
   const [visitCount, setVisitCount] = useState(0);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const storedCount = localStorage.getItem("visitCount");
-
-      if (storedCount) {
-        setVisitCount(parseInt(storedCount));
-      }
-
-      setVisitCount((prevCount) => {
-        const newCount = prevCount + 1;
-        localStorage.setItem("visitCount", newCount.toString());
-        return newCount;
-      });
+    const storedCount = Cookies.get("visitCount");
+    if (storedCount) {
+      setVisitCount(parseInt(storedCount));
     }
+
+    setVisitCount((prevCount) => {
+      const newCount = prevCount + 1;
+      Cookies.set("visitCount", newCount.toString(), {
+        expires: 365,
+        path: "/",
+      });
+      return newCount;
+    });
   }, []);
   return (
     <div>

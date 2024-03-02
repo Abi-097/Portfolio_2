@@ -117,8 +117,7 @@ const Projects = ({ openModal, setOpenModal }) => {
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          I have worked on a wide range of projects. From web apps to android
-          apps. Here are some of my projects.
+          I have worked on a wide range of projects; here are some of them:
         </Desc>
         <ToggleButtonGroup>
           {toggle === "all" ? (
@@ -131,34 +130,27 @@ const Projects = ({ openModal, setOpenModal }) => {
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "web app" ? (
+          {toggle === "web_app" ? (
             <ToggleButton
               active
-              value="web app"
-              onClick={() => setToggle("web app")}
+              value="web_app"
+              onClick={() => setToggle("web_app")}
             >
-              WEB APP&apos;S
+              WEB APPS
             </ToggleButton>
           ) : (
-            <ToggleButton value="web app" onClick={() => setToggle("web app")}>
-              WEB APP&apos;S
+            <ToggleButton value="web_app" onClick={() => setToggle("web_app")}>
+              WEB APPS
             </ToggleButton>
           )}
           <Divider />
-          {toggle === "android app" ? (
-            <ToggleButton
-              active
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              ANDROID APP&apos;S
+          {toggle === "blog" ? (
+            <ToggleButton active value="blog" onClick={() => setToggle("blog")}>
+              BLOGS
             </ToggleButton>
           ) : (
-            <ToggleButton
-              value="android app"
-              onClick={() => setToggle("android app")}
-            >
-              ANDROID APP&apos;S
+            <ToggleButton value="blog" onClick={() => setToggle("blog")}>
+              BLOGS
             </ToggleButton>
           )}
           <Divider />

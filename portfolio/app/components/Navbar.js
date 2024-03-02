@@ -262,7 +262,7 @@ const Navbar = () => {
       </NavContainer>
       {isOpen && (
         <MobileMenu isOpen={isOpen}>
-          <Link href="#about">
+          <Link href="#about" style={{ textDecoration: "none" }}>
             <MobileLink
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -271,7 +271,7 @@ const Navbar = () => {
               About
             </MobileLink>
           </Link>
-          <Link href="#skills">
+          <Link href="#skills" style={{ textDecoration: "none" }}>
             <MobileLink
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -280,7 +280,7 @@ const Navbar = () => {
               Skills
             </MobileLink>
           </Link>
-          <Link href="#experience">
+          <Link href="#experience" style={{ textDecoration: "none" }}>
             <MobileLink
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -289,7 +289,7 @@ const Navbar = () => {
               Experience
             </MobileLink>
           </Link>
-          <Link href="#projects">
+          <Link href="#projects" style={{ textDecoration: "none" }}>
             <MobileLink
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -298,7 +298,7 @@ const Navbar = () => {
               Projects
             </MobileLink>
           </Link>
-          <Link href="#education">
+          <Link href="#education" style={{ textDecoration: "none" }}>
             <MobileLink
               onClick={() => {
                 setIsOpen(!isOpen);
@@ -307,7 +307,11 @@ const Navbar = () => {
               Education
             </MobileLink>
           </Link>
-          <Link href={Bio.github} target="_blank">
+          <Link
+            href={Bio.github}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
             <GitHubButton
               style={{
                 padding: "10px 16px",

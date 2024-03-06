@@ -266,7 +266,7 @@ export const education = [
 
 export const projects = [
   {
-    id: 11,
+    id: 1,
     title: "Namaste Website (NGO)",
     date: "Dec 2023",
     description:
@@ -291,7 +291,7 @@ export const projects = [
   },
 
   {
-    id: 1,
+    id: 2,
     title: "LMS - Education - Admin panel",
     date: "June 2023 - Aug 2023",
     description:
@@ -314,7 +314,7 @@ export const projects = [
     webapp: " ",
   },
   {
-    id: 0,
+    id: 3,
     title: "Adiya Admin Panel - Resturant Application",
     date: "Mar 2023 - June 2023",
     description:
@@ -353,7 +353,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 4,
     title: "Quiz App- using API",
     date: "Jan 2023",
     description:
@@ -382,7 +382,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 5,
     title: "IMDb site Clone- include API",
     date: "Jan 2023",
     description:
@@ -394,7 +394,7 @@ export const projects = [
     webapp: "https://clone-imdb-a5at.vercel.app/",
   },
   {
-    id: 10,
+    id: 6,
     title: "NIC tracker",
     date: "Dec 2022",
     description:
@@ -406,37 +406,75 @@ export const projects = [
     webapp: "https://nic-tracker.vercel.app/",
   },
   {
-    id: 4,
-    title: "My Portfolio",
+    id: 7,
+    title: "Portfolio",
     date: "Dec 2022",
-    description: "My personal portfolio with my information.",
+    description: "My personal portfolio with real information.",
     image: "/portfolio.PNG",
 
-    tags: ["ReactJS", "HTML", "CSS", "JS", "NPM", "MUI"],
+    tags: ["ReactJS", "HTML", "CSS", "JS", "NPM", "MUI", "EmailJS"],
     category: "web_app",
     github: "https://github.com/Abi-097/portfolio-2.1",
     webapp: "https://portfolio-2-1-motl.vercel.app/",
   },
   {
-    id: 12,
+    id: 8,
     title:
       "The problem I encountered when deploying the build — the white screen.",
     date: "Feb 2024",
     description:
       "When building our React application, I encountered this problem and found a solution for it.",
     image: "/blog1.PNG",
-    tags: [""],
+    tags: ["Deploy"],
     category: "blog",
     github: "",
     webapp:
       "https://medium.com/@abishekm84/the-problem-i-encountered-when-deploying-the-build-the-white-screen-5dc3aeea28f4",
   },
+  {
+    id: 9,
+    title: "GIT - Tutorial",
+    date: "Dec 2023",
+    description:
+      "GitHub hosts Git repositories and provides developers with tools to improve their code. These tools include command-line features, threaded discussions for issues, pull requests, code review capabilities, as well as access to a collection of free and for-purchase apps available in the GitHub Marketplace.",
+    image: "/git.png",
+    tags: ["Git", "GitHub"],
+    category: "blog",
+    github: "",
+    webapp:
+      "https://www.youtube.com/watch?v=tRZGeaHPoaw&pp=ygUMZ2l0IHR1dG9yaWFs",
+  },
+  {
+    id: 10,
+    title: "Next.JS - Tutorial",
+    date: "Jan 2024",
+    description:
+      "Next.js, the React Framework, aims to have the best-in-class developer experience and many built-in features, such as an intuitive page-based routing system (with support for dynamic routes) and pre-rendering. Both static generation (SSG) and server-side rendering (SSR) are supported on a per-page basis.",
+    image: "/pf.jpeg",
+    tags: ["React.JS", "Next.JS"],
+    category: "blog",
+    github: "",
+    webapp:
+      "https://www.youtube.com/watch?v=wm5gMKuwSYk&pp=ygUQbmV4dCBqcyB0dXRvcmlhbA%3D%3D",
+  },
+  {
+    id: 11,
+    title: "ToDo Application using Next.JS",
+    date: "Jan 2024",
+    description:
+      "It's a ToDo application connected to the MERN stack, utilizing CRUD methods.",
+    image: "/todo.png",
+    tags: ["Next.JS", "Node.JS", "Express.JS", "MongoDB", "Tailwind CSS"],
+    category: "web_app",
+    github: "https://github.com/Abi-097/todoapp_crud.git",
+    webapp: "todoapp-crud.vercel.app",
+  },
 ];
 
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
-];
+// export const TimeLineData = [
+//   { year: 2017, text: "Started my journey" },
+//   { year: 2018, text: "Worked as a freelance developer" },
+//   { year: 2019, text: "Founded JavaScript Mastery" },
+//   { year: 2020, text: "Shared my projects with the world" },
+//   { year: 2021, text: "Started my own platform" },
+// ];

@@ -146,11 +146,11 @@ const Projects = ({ openModal, setOpenModal }) => {
           <Divider />
           {toggle === "blog" ? (
             <ToggleButton active value="blog" onClick={() => setToggle("blog")}>
-              BLOGS
+              BLOGS & LEARNINGS
             </ToggleButton>
           ) : (
             <ToggleButton value="blog" onClick={() => setToggle("blog")}>
-              BLOGS
+              BLOGS & LEARNINGS
             </ToggleButton>
           )}
           <Divider />

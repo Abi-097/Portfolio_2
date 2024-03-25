@@ -5,7 +5,7 @@ export const Bio = {
     "Keen to advance my software development career, I bring hands-on experience from a successful experience and a detail-oriented approach. Ready for a challenging role, I'm committed to continuous learning and excited about contributing to the development of sophisticated software applications, collaborating with seasoned professionals to drive organizational growth.",
   github: "https://github.com/Abi-097",
   resume:
-    "https://drive.google.com/file/d/1Z4-bdkDpGDIQC2kM5TG2rGT4QsjWnYlx/view?usp=drive_link",
+    "https://drive.google.com/file/d/1Kb0joX-hCC4gBFuoy3ZNFiq79f42DlfA/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/abishek-mahenderaraja-188286169/",
   twitter: "https://twitter.com/",
   insta: "https://www.instagram.com/abi__1203_/",

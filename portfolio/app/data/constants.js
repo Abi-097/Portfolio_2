@@ -3,6 +3,7 @@ export const Bio = {
   roles: ["MERN stack developer", "Self Learner", "ERP developer"],
   description:
     "Keen to advance my software development career, I bring hands-on experience from a successful experience and a detail-oriented approach. Ready for a challenging role, I'm committed to continuous learning and excited about contributing to the development of sophisticated software applications, collaborating with seasoned professionals to drive organizational growth.",
+  quote: "The only way to do great work is to love what you do.",
   github: "https://github.com/Abi-097",
   resume:
     "https://drive.google.com/file/d/1Kb0joX-hCC4gBFuoy3ZNFiq79f42DlfA/view?usp=drive_link",
@@ -468,6 +469,18 @@ export const projects = [
     category: "web_app",
     github: "https://github.com/Abi-097/todoapp_crud.git",
     webapp: "todoapp-crud.vercel.app",
+  },
+  {
+    id: 11,
+    title: "Git Commands",
+    date: "Jan 2024",
+    description:
+      "Basic and very important Git commands that developers need to know.",
+    image: "/git2.png",
+    tags: ["Git", "GitHub"],
+    category: "blog",
+    github: "",
+    webapp: "https://medium.com/@abishekm84/git-9dedeeb9d000",
   },
 ];
 

@@ -155,7 +155,22 @@ export const Span = styled.span`
 `;
 
 export const SubTitle = styled.div`
-  font-size: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 15px;
+  color: ${({ theme }) => theme.text_primary + 95};
+
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 32px;
+  }
+`;
+export const Quote = styled.div`
+  font-size: 16px;
   line-height: 32px;
   margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
@@ -232,6 +247,7 @@ const Hero = () => {
               </Span>
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
+            <Quote>{`"${Bio.quote}" - Steve Jobs.`}</Quote>
             <ResumeButton href={Bio.resume} target="display">
               Check Resume
             </ResumeButton>

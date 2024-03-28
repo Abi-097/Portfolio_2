@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
+import Button from "@mui/material/Button";
 import { DiCodrops } from "react-icons/di";
 import { FaBars } from "react-icons/fa";
 import { useTheme } from "styled-components";
@@ -97,31 +98,6 @@ const ButtonContainer = styled.div`
   }
 `;
 
-const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 3rem;
-  width: 10rem;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
-  padding: 0 20px;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
-  transition: color 0.6s ease-in-out, background 0.6s ease-in-out;
-
-  &:hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-`;
 export const Span = styled.div`
   padding: 0 4px;
   font-weight: bold;
@@ -257,7 +233,18 @@ const Navbar = () => {
         </NavItems>
         <ButtonContainer>
           <Link href={Bio.github} target="_blank">
-            <GitHubButton>GitHub Profile</GitHubButton>
+            <Button
+              variant="outlined"
+              sx={{
+                width: "11rem",
+                height: "3rem",
+                fontWeight: 500,
+                borderRadius: "14px",
+                fontSize: "15px",
+              }}
+            >
+              GitHub Profile
+            </Button>
           </Link>{" "}
         </ButtonContainer>
       </NavContainer>
@@ -313,16 +300,19 @@ const Navbar = () => {
             target="_blank"
             style={{ textDecoration: "none" }}
           >
-            <GitHubButton
-              style={{
-                padding: "10px 16px",
-                background: `${theme.primary}`,
-                color: "white",
-                width: "max-content",
+            <Button
+              variant="contained"
+              color="info"
+              sx={{
+                width: "11rem",
+                height: "3rem",
+                fontWeight: 500,
+                borderRadius: "12px",
+                fontSize: "15px",
               }}
             >
-              Github Profile
-            </GitHubButton>
+              GitHub Profile
+            </Button>
           </Link>
         </MobileMenu>
       )}

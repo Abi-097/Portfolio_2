@@ -3,8 +3,12 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
-import HeroBgAnimation from "./HeroAnimations";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import Count from "./Count";
+import Particles from "./Particles";
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -116,9 +120,25 @@ export const Img = styled.img`
   }
 `;
 
-export const Title = styled.div`
+export const TitleName = styled.div`
   font-weight: 700;
   font-size: 50px;
+  color: ${({ theme }) => theme.text_primary};
+  line-height: 68px;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+  }
+`;
+
+export const Title = styled.div`
+  font-weight: 600;
+  font-size: 40px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
   @media (max-width: 960px) {
@@ -172,7 +192,6 @@ export const SubTitle = styled.div`
 export const Quote = styled.div`
   font-size: 16px;
   line-height: 32px;
-  margin-bottom: 42px;
   color: ${({ theme }) => theme.text_primary + 95};
 
   @media (max-width: 960px) {
@@ -182,6 +201,22 @@ export const Quote = styled.div`
   @media (max-width: 640px) {
     font-size: 16px;
     line-height: 32px;
+  }
+`;
+const SocialMediaIcons = styled.div`
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+`;
+
+const SocialMediaIcon = styled.a`
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.text_primary};
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: ${({ theme }) => theme.primary};
   }
 `;
 
@@ -219,6 +254,8 @@ export const ResumeButton = styled.a`
         font-size: 18px;
     } 
 
+    
+
 `;
 
 const Hero = () => {
@@ -226,16 +263,16 @@ const Hero = () => {
     <div id="about">
       <HeroContainer>
         <HeroBg>
-          <HeroBgAnimation />
+          {/* <HeroBgAnimation /> */}
+          <Particles />
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
             <Count />
-            <Title>
-              Hi, I am <br /> {Bio.name}
-            </Title>
+            <Title>Hey, This is</Title>
+            <TitleName>{Bio.name}</TitleName>
             <TextLoop>
-              I am a
+              I am
               <Span>
                 <Typewriter
                   options={{
@@ -248,6 +285,20 @@ const Hero = () => {
             </TextLoop>
             <SubTitle>{Bio.description}</SubTitle>
             <Quote>{`"${Bio.quote}" - Steve Jobs.`}</Quote>
+            <SocialMediaIcons>
+              <SocialMediaIcon href={Bio.facebook} target="display">
+                <FacebookIcon sx={{ fontSize: "2rem" }} />
+              </SocialMediaIcon>
+              <SocialMediaIcon href={Bio.twitter} target="display">
+                <TwitterIcon sx={{ fontSize: "2rem" }} />
+              </SocialMediaIcon>
+              <SocialMediaIcon href={Bio.linkedin} target="display">
+                <LinkedInIcon sx={{ fontSize: "2rem" }} />
+              </SocialMediaIcon>
+              <SocialMediaIcon href={Bio.insta} target="display">
+                <InstagramIcon sx={{ fontSize: "2rem" }} />
+              </SocialMediaIcon>
+            </SocialMediaIcons>
             <ResumeButton href={Bio.resume} target="display">
               Check Resume
             </ResumeButton>

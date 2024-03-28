@@ -1,6 +1,6 @@
 export const Bio = {
   name: "Abishek Mahenderaraja",
-  roles: ["MERN stack developer", "Self Learner", "ERP developer"],
+  roles: ["MERN Stack Developer", "ERP Developer", "Self Learner"],
   description:
     "Keen to advance my software development career, I bring hands-on experience from a successful experience and a detail-oriented approach. Ready for a challenging role, I'm committed to continuous learning and excited about contributing to the development of sophisticated software applications, collaborating with seasoned professionals to drive organizational growth.",
   quote: "The only way to do great work is to love what you do.",
@@ -8,9 +8,9 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1Kb0joX-hCC4gBFuoy3ZNFiq79f42DlfA/view?usp=drive_link",
   linkedin: "https://www.linkedin.com/in/abishek-mahenderaraja-188286169/",
-  twitter: "https://twitter.com/",
+  twitter: "https://twitter.com/Abi_Mahen_012/",
   insta: "https://www.instagram.com/abi__1203_/",
-  facebook: "https://web.facebook.com/abishek.raja.142",
+  facebook: "https://web.facebook.com/abishek.raja.142/",
 };
 
 export const skills = [

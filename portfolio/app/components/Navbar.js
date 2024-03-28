@@ -17,8 +17,9 @@ const Nav = styled.div`
   top: 0;
   z-index: 10;
   @media (max-width: 960px) {
-    trastion: 0.8s all ease;
+    transition: 0.8s all ease;
   }
+  transition: background-color 0.3s ease;
 `;
 
 const NavContainer = styled.div`

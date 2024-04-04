@@ -10,6 +10,8 @@ const FooterContainer = styled.div`
   padding-bottom: 0.5rem;
   display: flex;
   justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(10px);
 `;
 
 const FooterWrapper = styled.footer`
@@ -18,7 +20,6 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   gap: 14px;
   align-items: center;
-  // padding: 1rem;
   color: ${({ theme }) => theme.text_primary};
 `;
 

@@ -21,6 +21,7 @@ const Nav = styled.div`
     transition: 0.8s all ease;
   }
   transition: background-color 0.3s ease;
+  backdrop-filter: blur(10px);
 `;
 
 const NavContainer = styled.div`
@@ -32,6 +33,7 @@ const NavContainer = styled.div`
   width: 100%;
   padding: 0 24px;
   max-width: 1200px;
+  position: sticky;
 `;
 
 const NavLogo = styled.div`

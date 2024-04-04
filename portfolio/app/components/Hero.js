@@ -9,6 +9,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Count from "./Count";
 import Particles from "./Particles";
+import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -22,7 +27,6 @@ export const HeroContainer = styled.div`
     padding: 32px 16px;
   }
   z-index: 1;
-
   clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
 `;
 
@@ -220,44 +224,6 @@ const SocialMediaIcon = styled.a`
   }
 `;
 
-export const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 300px;
-    text-align: center;
-    padding: 16px 0;
-    color:${({ theme }) => theme.white};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-        font-size: 18px;
-    } 
-
-    
-
-`;
-
 const Hero = () => {
   return (
     <div id="about">
@@ -299,9 +265,73 @@ const Hero = () => {
                 <InstagramIcon sx={{ fontSize: "2rem" }} />
               </SocialMediaIcon>
             </SocialMediaIcons>
-            <ResumeButton href={Bio.resume} target="display">
-              Check Resume
-            </ResumeButton>
+
+            <Grid container spacing={3}>
+              <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+                <Button
+                  variant="outlined"
+                  startIcon={<GitHubIcon style={{ fontSize: 30 }} />}
+                  href={Bio.resume}
+                  target="_blank"
+                  sx={{
+                    background:
+                      "linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%)",
+                    color: "#FFFFFF",
+                    borderRadius: "20px",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    border: "none",
+                    width: { xs: "100%" },
+                    padding: "14px 0",
+                    boxShadow:
+                      "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
+                    transition: "all 0.4s ease-in-out",
+                    "&:hover": {
+                      border: "none",
+                      transform: "scale(1.02)",
+                      boxShadow:
+                        "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
+                      filter: "brightness(1)",
+                    },
+                    mb: { xs: 2 },
+                  }}
+                >
+                  github
+                </Button>
+              </Grid>
+              <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+                <Button
+                  variant="outlined"
+                  endIcon={<DownloadRoundedIcon style={{ fontSize: 30 }} />}
+                  href={Bio.github}
+                  target="_blank"
+                  sx={{
+                    background:
+                      "linear-gradient(225deg,  hsla(294, 100%, 50%, 1) 0%,hsla(271, 100%, 50%, 1)  100%)",
+                    color: "#FFFFFF",
+                    borderRadius: "20px",
+                    fontSize: "20px",
+                    fontWeight: 600,
+                    border: "none",
+                    width: { xs: "100%" },
+                    padding: "14px 0",
+                    boxShadow:
+                      "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
+                    transition: "all 0.4s ease-in-out",
+                    "&:hover": {
+                      border: "none",
+                      transform: "scale(1.02)",
+                      boxShadow:
+                        "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
+                      filter: "brightness(1)",
+                    },
+                    mb: { xs: 2 },
+                  }}
+                >
+                  Resume
+                </Button>
+              </Grid>
+            </Grid>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">
             <Img src="/myself.jpg" alt="hero-image" />

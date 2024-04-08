@@ -271,7 +271,7 @@ const Hero = () => {
                 <Button
                   variant="outlined"
                   startIcon={<GitHubIcon style={{ fontSize: 30 }} />}
-                  href={Bio.resume}
+                  href={Bio.github}
                   target="_blank"
                   sx={{
                     background:
@@ -303,7 +303,7 @@ const Hero = () => {
                 <Button
                   variant="outlined"
                   endIcon={<DownloadRoundedIcon style={{ fontSize: 30 }} />}
-                  href={Bio.github}
+                  href={Bio.resume}
                   target="_blank"
                   sx={{
                     background:

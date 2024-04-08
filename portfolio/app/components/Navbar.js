@@ -165,16 +165,7 @@ export const MobileMenuButton = styled.a`
 export const MobileLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
-  cursor: pointer;
   transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.primary};
-  }
-
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
 `;
 
 export const MobileNavLogo = styled.div`

@@ -466,7 +466,7 @@ export const projects = [
     webapp: "todoapp-crud.vercel.app",
   },
   {
-    id: 11,
+    id: 12,
     title: "Git Commands",
     date: "Jan 2024",
     description:
@@ -476,6 +476,27 @@ export const projects = [
     category: "blog",
     github: "",
     webapp: "https://medium.com/@abishekm84/git-9dedeeb9d000",
+  },
+  {
+    id: 13,
+    title: "Ticketing App",
+    date: "April 2024",
+    description: "Application for Ticket Raising or Creating.",
+
+    image: "/ticket_mgt.PNG",
+    tags: [
+      "NextJS",
+      "CSS",
+      "JS",
+      "NPM",
+      "TailwindCss",
+      "NodeJs",
+      "Postman",
+      "Rest API",
+    ],
+    category: "web_app",
+    github: "https://github.com/Abi-097/ticketing-app.git",
+    webapp: "https://ticketing-app-swart.vercel.app",
   },
 ];
 

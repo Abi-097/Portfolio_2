@@ -498,6 +498,18 @@ export const projects = [
     github: "https://github.com/Abi-097/ticketing-app.git",
     webapp: "https://ticketing-app-swart.vercel.app",
   },
+  {
+    id: 14,
+    title: "Rarely using HTML tags - Part1",
+    date: "April 2024",
+    description: "Basic and very important HTML Tag every developer must know.",
+    image: "/0_Ff_qfeJSyyNgU8Na.png",
+    tags: ["HTML"],
+    category: "blog",
+    github: "",
+    webapp:
+      "https://medium.com/@abishekm84/rarely-using-html-tags-part1-03473d0e986c",
+  },
 ];
 
 // export const TimeLineData = [

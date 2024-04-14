@@ -27,10 +27,26 @@ const Count = () => {
         style={{
           backgroundColor: "#344955",
           color: "#FFFFFF",
-          fontSize: "10px",
+          fontSize: "9px",
+          padding: "0px",
         }}
       >
-        Profile views {visitCount}
+        <span
+          style={{
+            backgroundColor: "#1C1678",
+            padding: "2px",
+            borderRadius: "4px 0 0 4px",
+          }}
+        >
+          Profile views:
+        </span>
+        <span
+          style={{
+            padding: "2px",
+          }}
+        >
+          {visitCount}
+        </span>
       </Button>
     </div>
   );

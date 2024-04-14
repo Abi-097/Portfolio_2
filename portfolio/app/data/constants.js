@@ -176,7 +176,7 @@ export const experiences = [
   {
     id: 1,
     img: "https://media.licdn.com/dms/image/C4E0BAQFez_51yePKwg/company-logo_200_200/0/1630628678738?e=2147483647&v=beta&t=YPtj2wIKPCxIVi7xu3DF4NkHniStqzeEryEJl5JNPbc",
-    role: "Software Developer - Intern",
+    role: "Junior - Software Developer",
     company: "Levant Business Experts Pvt. Ltd.",
     date: "Aug 2023 - Current",
     desc: "I am actively contributing to Odoo development projects using Python and XML. Additionally, I have worked closely with the database team to optimize SQL queries and ensure database performance. Moreover, I integrated SOAP API to facilitate communication between the frontend and backend systems.",

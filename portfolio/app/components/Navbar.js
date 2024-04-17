@@ -179,7 +179,7 @@ export const MobileNavLogo = styled.div`
     padding: 0 0px;
   }
 `;
-
+//
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const theme = useTheme();

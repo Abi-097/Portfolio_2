@@ -1,7 +1,6 @@
 "use client";
 import styled from "styled-components";
 import React from "react";
-import { useState } from "react";
 import ProjectCards from "./Cards/ProjectCard";
 import { projects } from "../data/constants";
 export const Container = styled.div`

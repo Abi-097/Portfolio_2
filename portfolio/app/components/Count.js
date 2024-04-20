@@ -17,7 +17,7 @@ const Count = () => {
         expires: 365,
         path: "/",
       });
-      return newCount;
+      return newCount; 
     });
   }, []);
   return (

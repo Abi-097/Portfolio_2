@@ -282,7 +282,7 @@ const Hero = () => {
                     fontWeight: 600,
                     border: "none",
                     width: { xs: "100%" },
-                    padding: "14px 0",
+                    padding: "8px 0",
                     boxShadow:
                       "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
                     transition: "all 0.4s ease-in-out",
@@ -314,7 +314,7 @@ const Hero = () => {
                     fontWeight: 600,
                     border: "none",
                     width: { xs: "100%" },
-                    padding: "14px 0",
+                    padding: "8px 0",
                     boxShadow:
                       "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
                     transition: "all 0.4s ease-in-out",

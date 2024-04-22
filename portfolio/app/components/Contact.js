@@ -3,8 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { Snackbar, SnackbarContent } from "@mui/material";
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -162,44 +160,16 @@ const Contact = () => {
         <Title>Contact Me</Title>
         <Desc>Feel free to reach out to me for any questions!!!</Desc>
         <ContactForm ref={form} onSubmit={handleSubmit}>
+          <div style={{ display: "flex", gap: 2 }}></div>
           <ContactTitle>Email Me 🚀</ContactTitle>
+
           <ContactInput placeholder="Your Name" name="from_name" />
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Subject" name="subject" />
           <ContactInputMessage placeholder="Message" rows="4" name="message" />
           <ContactButton type="submit" value="Send" />
+          <Desc>WhatsApp: +94-76 400 4274</Desc>
         </ContactForm>
-        {/* <SnackbarContent
-          open={open}
-          autoHideDuration={6000}
-          onClose={() => setOpen(false)}
-          message="Email sent successfully!"
-          sx={{
-            width: "100%",
-            "& .MuiSnackbarContent-message": {
-              display: "flex",
-              alignItems: "center",
-            },
-            "& .MuiSnackbarContent-action": {
-              paddingLeft: "8px",
-            },
-            "& .timer-bar": {
-              height: "4px",
-              backgroundColor: "#4caf50",
-              position: "absolute",
-              bottom: 0,
-              left: 0,
-              width: "100%",
-              animation: "$timer-animation 6000ms linear forwards",
-            },
-            "@keyframes timer-animation": {
-              "0%": { width: "100%" },
-              "100%": { width: "0%" },
-            },
-          }}
-        >
-          <div className="timer-bar"></div>
-        </SnackbarContent> */}
       </Wrapper>
     </Container>
   );

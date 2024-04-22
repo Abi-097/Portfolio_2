@@ -14,6 +14,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectDetails from "./components/ProjectDetails";
 import { FallingLines } from "react-loader-spinner";
+import BottomNavbar from "./components/BottomNavbar";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -70,8 +71,9 @@ export default function Home() {
         </div>
       ) : (
         <>
-          <Navbar />
+          {/* <Navbar /> */}
           <Body>
+            <BottomNavbar />
             <Hero />
             <Wrapper>
               <Skills />

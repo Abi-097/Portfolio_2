@@ -71,9 +71,9 @@ export default function Home() {
         </div>
       ) : (
         <>
-          {/* <Navbar /> */}
+          <Navbar />
           <Body>
-            <BottomNavbar />
+            {/* <BottomNavbar /> */}
             <Hero />
             <Wrapper>
               <Skills />

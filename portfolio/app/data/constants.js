@@ -510,6 +510,19 @@ export const projects = [
     webapp:
       "https://medium.com/@abishekm84/rarely-using-html-tags-part1-03473d0e986c",
   },
+  {
+    id: 15,
+    title: "Build a JavaScript AI App with React and the OpenAI API",
+    date: "April 2024",
+    description:
+      "Build a React application with connecting AI and the OpenAI API",
+    image: "/LinkedIn Learning Certificate.png",
+    tags: ["REACT", "OPEN API"],
+    category: "certificate",
+    github: "https://github.com/Abi-097/ai_weather_app.git",
+    webapp:
+      "https://medium.com/@abishekm84/rarely-using-html-tags-part1-03473d0e986c",
+  },
 ];
 
 // export const TimeLineData = [

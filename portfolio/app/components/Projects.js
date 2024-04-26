@@ -146,15 +146,15 @@ const Projects = ({ openModal, setOpenModal }) => {
           <Divider />
           {toggle === "blog" ? (
             <ToggleButton active value="blog" onClick={() => setToggle("blog")}>
-              BLOGS & LEARNINGS
+              ARTICLES
             </ToggleButton>
           ) : (
             <ToggleButton value="blog" onClick={() => setToggle("blog")}>
-              BLOGS & LEARNINGS
+              ARTICLES
             </ToggleButton>
           )}
-          <Divider />
-          {toggle === "machine learning" ? (
+          {/* <Divider /> */}
+          {/* {toggle === "machine learning" ? (
             <ToggleButton
               active
               value="machine learning"
@@ -168,6 +168,23 @@ const Projects = ({ openModal, setOpenModal }) => {
               onClick={() => setToggle("machine learning")}
             >
               MACHINE LEARNING
+            </ToggleButton>
+          )}{" "} */}
+          <Divider />
+          {toggle === "certificate" ? (
+            <ToggleButton
+              active
+              value="certificate"
+              onClick={() => setToggle("certificate")}
+            >
+              CERTIFICATES
+            </ToggleButton>
+          ) : (
+            <ToggleButton
+              value="certificate"
+              onClick={() => setToggle("certificate")}
+            >
+              CERTIFICATES
             </ToggleButton>
           )}
         </ToggleButtonGroup>

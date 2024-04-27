@@ -98,16 +98,6 @@ export const CardContainer = styled.div`
   align-items: center;
   gap: 28px;
   flex-wrap: wrap;
-  // display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-gap: 32px;
-  // grid-auto-rows: minmax(100px, auto);
-  // @media (max-width: 960px) {
-  //     grid-template-columns: repeat(2, 1fr);
-  // }
-  // @media (max-width: 640px) {
-  //     grid-template-columns: repeat(1, 1fr);
-  // }
 `;
 
 const Projects = ({ openModal, setOpenModal }) => {
@@ -153,23 +143,6 @@ const Projects = ({ openModal, setOpenModal }) => {
               ARTICLES
             </ToggleButton>
           )}
-          {/* <Divider /> */}
-          {/* {toggle === "machine learning" ? (
-            <ToggleButton
-              active
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButton>
-          ) : (
-            <ToggleButton
-              value="machine learning"
-              onClick={() => setToggle("machine learning")}
-            >
-              MACHINE LEARNING
-            </ToggleButton>
-          )}{" "} */}
           <Divider />
           {toggle === "certificate" ? (
             <ToggleButton
@@ -177,14 +150,14 @@ const Projects = ({ openModal, setOpenModal }) => {
               value="certificate"
               onClick={() => setToggle("certificate")}
             >
-              CERTIFICATES
+              CERTIFICATES & LEARNINGS
             </ToggleButton>
           ) : (
             <ToggleButton
               value="certificate"
               onClick={() => setToggle("certificate")}
             >
-              CERTIFICATES
+              CERTIFICATES & LEARNINGS
             </ToggleButton>
           )}
         </ToggleButtonGroup>

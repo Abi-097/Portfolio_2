@@ -101,16 +101,6 @@ export const skills = [
   },
 
   {
-    title: "Machine Learning",
-    skills: [
-      {
-        name: "Python",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-      },
-    ],
-  },
-  {
     title: "Others",
     skills: [
       {
@@ -435,7 +425,7 @@ export const projects = [
       "GitHub hosts Git repositories and provides developers with tools to improve their code. These tools include command-line features, threaded discussions for issues, pull requests, code review capabilities, as well as access to a collection of free and for-purchase apps available in the GitHub Marketplace.",
     image: "/git.png",
     tags: ["Git", "GitHub"],
-    category: "blog",
+    category: "certificate",
     github: "",
     webapp:
       "https://www.youtube.com/watch?v=tRZGeaHPoaw&pp=ygUMZ2l0IHR1dG9yaWFs",
@@ -448,7 +438,7 @@ export const projects = [
       "Next.js, the React Framework, aims to have the best-in-class developer experience and many built-in features, such as an intuitive page-based routing system (with support for dynamic routes) and pre-rendering. Both static generation (SSG) and server-side rendering (SSR) are supported on a per-page basis.",
     image: "/pf.jpeg",
     tags: ["React.JS", "Next.JS"],
-    category: "blog",
+    category: "certificate",
     github: "",
     webapp:
       "https://www.youtube.com/watch?v=wm5gMKuwSYk&pp=ygUQbmV4dCBqcyB0dXRvcmlhbA%3D%3D",
@@ -517,11 +507,23 @@ export const projects = [
     description:
       "Build a React application with connecting AI and the OpenAI API",
     image: "/LinkedIn Learning Certificate.png",
-    tags: ["REACT", "OPEN API"],
+    tags: ["VITEJS", "OPEN API"],
     category: "certificate",
     github: "https://github.com/Abi-097/ai_weather_app.git",
+    webapp: "https://ai-weather-app-six.vercel.app/",
+  },
+  {
+    id: 16,
+    title: "How can I use Google Sheets as a database for a React application?",
+    date: "April 2024",
+    description:
+      "Typically, we connect to our database through a web application to store the data. Have you ever considered saving the data directly in a Google Sheet by linking it to a web application? You may now accomplish this without utilizing a database. This article describes how to store data from a simple application form in a Google Sheet.",
+    image: "/excel.png",
+    tags: ["REACTJS", "GOOGLE SHEET"],
+    category: "blog",
+    github: "",
     webapp:
-      "https://medium.com/@abishekm84/rarely-using-html-tags-part1-03473d0e986c",
+      "https://medium.com/@abishekm84/how-can-i-use-google-sheets-as-a-database-for-a-react-application-0ca74962a469",
   },
 ];
 

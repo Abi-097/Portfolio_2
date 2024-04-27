@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import { DiCodrops } from "react-icons/di";

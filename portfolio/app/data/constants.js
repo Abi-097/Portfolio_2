@@ -506,7 +506,7 @@ export const projects = [
     title: "Build a JavaScript AI App with React and the OpenAI API",
     date: "April 2024",
     description:
-      "Build a React application with connecting AI and the OpenAI API",
+      "In this course, I learned to integrate the OpenAI API into a React-based web app, adding a heavy dose of AI and creating an interactive experience that understands the location from which you want weather information, explains the weather data in simple language, and even suggests what to wear. Through this project, I learned about API integration, user-based authentication, storing user tokens in a ServiceWorker, task-based API configuration, and sending and receiving requests to the API.",
     image: "/LinkedIn Learning Certificate.png",
     tags: ["Vite.JS", "OpenAI API"],
     category: "certificate",
@@ -525,6 +525,19 @@ export const projects = [
     github: "",
     webapp:
       "https://medium.com/@abishekm84/how-can-i-use-google-sheets-as-a-database-for-a-react-application-0ca74962a469",
+  },
+  {
+    id: 16,
+    title: "SEO Foundations",
+    date: "May 2024",
+    description:
+      "In this course, we delve into the fundamentals of reading search engine results pages, understanding keyword attributes, optimizing the non-text components of a webpage, and long-term content planning strategies to maintain freshness on your site. We define your website’s audience, topics, angle, and style, providing insights into effective audience targeting and content creation. Furthermore, we outline the steps to take when building internal links within your website, enhancing navigation and link equity distribution. Additionally, we cover how to analyze links to measure SEO effectiveness, offering valuable insights into assessing your website’s performance and optimizing for better results. ",
+    image: "/seo.PNG",
+    tags: ["SEO"],
+    category: "certificate",
+    github: "",
+    webapp:
+      "https://www.linkedin.com/learning/seo-foundations-14828080?trk=learning-topics_trending-courses_related-content-card&upsellOrderOrigin=share_certificate",
   },
 ];
 

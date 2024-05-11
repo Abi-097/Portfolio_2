@@ -395,7 +395,7 @@ export const projects = [
     tags: ["Next.JS", "CSS | MUI", "JavaScript", "Axios", "EmailJS"],
     category: "web_app",
     github: "https://github.com/Abi-097/Portfolio_2",
-    webapp: "https://portfolio-2-xrvn.vercel.app/",
+    webapp: "https://abisportfolio.vercel.app/",
   },
   {
     id: 8,

@@ -1,10 +1,9 @@
 "use client";
-
+import * as React from "react";
 import styled from "styled-components";
 import { Bio } from "../data/constants";
 import Typewriter from "typewriter-effect";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import Count from "./Count";
@@ -13,7 +12,9 @@ import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
-
+import XIcon from "@mui/icons-material/X";
+import DriveFileMoveIcon from "@mui/icons-material/DriveFileMove";
+import { Popover } from "@mui/material";
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.card_light};
   display: flex;
@@ -225,6 +226,16 @@ const SocialMediaIcon = styled.a`
 `;
 
 const Hero = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const handlePopoverOpen = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handlePopoverClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
   return (
     <div id="about">
       <HeroContainer>
@@ -256,7 +267,7 @@ const Hero = () => {
                 <FacebookIcon sx={{ fontSize: "2rem" }} />
               </SocialMediaIcon>
               <SocialMediaIcon href={Bio.twitter} target="display">
-                <TwitterIcon sx={{ fontSize: "2rem" }} />
+                <XIcon sx={{ fontSize: "2rem" }} />
               </SocialMediaIcon>
               <SocialMediaIcon href={Bio.linkedin} target="display">
                 <LinkedInIcon sx={{ fontSize: "2rem" }} />
@@ -264,74 +275,39 @@ const Hero = () => {
               <SocialMediaIcon href={Bio.insta} target="display">
                 <InstagramIcon sx={{ fontSize: "2rem" }} />
               </SocialMediaIcon>
+              <SocialMediaIcon href={Bio.github} target="display">
+                <GitHubIcon sx={{ fontSize: "2rem" }} />
+              </SocialMediaIcon>
+              <SocialMediaIcon href={Bio.resume} target="display">
+                <DriveFileMoveIcon
+                  sx={{ fontSize: "2rem" }}
+                  aria-owns={open ? "mouse-over-popover" : undefined}
+                  aria-haspopup="true"
+                  onMouseEnter={handlePopoverOpen}
+                  onMouseLeave={handlePopoverClose}
+                />
+              </SocialMediaIcon>
+              <Popover
+                id="mouse-over-popover"
+                sx={{
+                  pointerEvents: "none",
+                }}
+                open={open}
+                anchorEl={anchorEl}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                onClose={handlePopoverClose}
+                disableRestoreFocus
+              >
+                <p style={{ padding: "5px" }}>My Resume</p>
+              </Popover>
             </SocialMediaIcons>
-
-            <Grid container spacing={3}>
-              <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                <Button
-                  variant="outlined"
-                  startIcon={<GitHubIcon style={{ fontSize: 30 }} />}
-                  href={Bio.github}
-                  target="_blank"
-                  sx={{
-                    background:
-                      "linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%)",
-                    color: "#FFFFFF",
-                    borderRadius: "20px",
-                    fontSize: "20px",
-                    fontWeight: 600,
-                    border: "none",
-                    width: { xs: "100%" },
-                    padding: "8px 0",
-                    boxShadow:
-                      "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
-                    transition: "all 0.4s ease-in-out",
-                    "&:hover": {
-                      border: "none",
-                      transform: "scale(1.02)",
-                      boxShadow:
-                        "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
-                      filter: "brightness(1)",
-                    },
-                    mb: { xs: 2 },
-                  }}
-                >
-                  github
-                </Button>
-              </Grid>
-              <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                <Button
-                  variant="outlined"
-                  endIcon={<DownloadRoundedIcon style={{ fontSize: 30 }} />}
-                  href={Bio.resume}
-                  target="_blank"
-                  sx={{
-                    background:
-                      "linear-gradient(225deg,  hsla(294, 100%, 50%, 1) 0%,hsla(271, 100%, 50%, 1)  100%)",
-                    color: "#FFFFFF",
-                    borderRadius: "20px",
-                    fontSize: "20px",
-                    fontWeight: 600,
-                    border: "none",
-                    width: { xs: "100%" },
-                    padding: "8px 0",
-                    boxShadow:
-                      "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
-                    transition: "all 0.4s ease-in-out",
-                    "&:hover": {
-                      border: "none",
-                      transform: "scale(1.02)",
-                      boxShadow:
-                        "20px 20px 60px #1F2634, -20px -20px 60px #1F2634",
-                      filter: "brightness(1)",
-                    },
-                    mb: { xs: 2 },
-                  }}
-                >
-                  Resume
-                </Button>
-              </Grid>
-            </Grid>
           </HeroLeftContainer>
           <HeroRightContainer id="Right">
             <Img src="/myself.jpg" alt="hero-image" />

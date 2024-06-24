@@ -4,9 +4,9 @@ export const Bio = {
   description:
     "Keen to advance my software development career, I bring hands-on experience from a successful experience and a detail-oriented approach. Ready for a challenging role, I'm committed to continuous learning and excited about contributing to the development of sophisticated software applications, collaborating with seasoned professionals to drive organizational growth.",
   quote: "The only way to do great work is to love what you do.",
-  github: "https://github.com/Abi-097",
+  github: "https://github.com/Abi-097/",
   resume:
-    "https://drive.google.com/file/d/1Kb0joX-hCC4gBFuoy3ZNFiq79f42DlfA/view?usp=sharing",
+    "https://drive.google.com/file/d/1Kb0joX-hCC4gBFuoy3ZNFiq79f42DlfA/view?usp=sharing/",
   linkedin: "https://www.linkedin.com/in/abishek-mahenderaraja-188286169/",
   twitter: "https://twitter.com/Abi_Mahen_012/",
   insta: "https://www.instagram.com/abi__1203_/",
@@ -539,6 +539,18 @@ export const projects = [
     github: "",
     webapp:
       "https://www.linkedin.com/learning/seo-foundations-14828080?trk=learning-topics_trending-courses_related-content-card&upsellOrderOrigin=share_certificate",
+  },
+  {
+    id: 17,
+    title: "Code Colabrator",
+    date: "June 2024",
+    description:
+      "Socket.IO-based code collaboration application allows multiple users to seamlessly work together on coding projects in real-time. Through synchronized editing and instant updates, collaborators can see each other's changes as they happen, facilitating efficient teamwork and enhancing productivity. The application supports simultaneous connections, ensuring smooth communication and interaction among all participants. It's ideal for remote teams, coding workshops, and educational purposes, offering a dynamic environment where ideas transform into code instantaneously.",
+    image: "/code_colobrator.png",
+    tags: ["React.JS", "CSS", "Socet.io", "Rest API"],
+    category: "web_app",
+    github: "https://github.com/Abi-097/code_editor.git",
+    webapp: "",
   },
 ];
 

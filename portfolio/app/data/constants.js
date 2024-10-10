@@ -280,8 +280,8 @@ export const projects = [
     image: "/clothing.PNG",
     tags: ["Vite.JS", "CSS | TailwindCSS", "JavaScript", "aos"],
     category: "web_app",
-    github: "https://github.com/Abi-097/cafebean_website.git",
-    webapp: "https://cafeshop-six.vercel.app",
+    github: "https://github.com/Abi-097/clothing_ecommerce_FE.git",
+    webapp: "https://clothing-ecommerce-fe.vercel.app",
   },
   {
     id: 1,

@@ -273,6 +273,18 @@ export const projects = [
   },
   {
     id: 1,
+    title: "Clothing Application",
+    date: "July 2024",
+    description: "Clothing based site",
+
+    image: "/clothing.PNG",
+    tags: ["Vite.JS", "CSS | TailwindCSS", "JavaScript", "aos"],
+    category: "web_app",
+    github: "https://github.com/Abi-097/cafebean_website.git",
+    webapp: "https://cafeshop-six.vercel.app",
+  },
+  {
+    id: 1,
     title: "Coffee Shop Site",
     date: "Augest 2024",
     description: "Its a Simple Coffee Website.",

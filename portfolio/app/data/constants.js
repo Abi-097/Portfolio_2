@@ -253,15 +253,55 @@ export const education = [
 export const projects = [
   {
     id: 1,
+    title: "Customer Tracker Application",
+    date: "October 2024",
+    description: "Company based customer tracking application",
+
+    image: "/customer.PNG",
+    tags: [
+      "Next.JS",
+      "CSS | Shadcn/UI",
+      "JavaScript",
+      "Redux",
+      "Axios",
+      "Postman",
+      "Rest API",
+    ],
+    category: "web_app",
+    github: "https://github.com/Abi-097/controlplane.git",
+    webapp: "https://controlplane-nine.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Coffee Shop Site",
     date: "Augest 2024",
     description: "Its a Simple Coffee Website.",
 
     image: "/coffeee.JPG",
-    tags: ["Vite.JS", "CSS | TailwindCss", "JavaScript", "aos"],
+    tags: ["Vite.JS", "CSS | TailwindCSS", "JavaScript", "aos"],
     category: "web_app",
     github: "https://github.com/Abi-097/cafebean_website.git",
     webapp: "https://cafeshop-six.vercel.app",
+  },
+  {
+    id: 1,
+    title: "Real Estate - MERN",
+    date: "July 2024",
+    description: "MERN Stack RealEstate Application",
+
+    image: "/realestate.PNG",
+    tags: [
+      "React.JS",
+      "CSS | Material UI",
+      "JavaScript",
+      "Redux",
+      "Axios",
+      "Postman",
+      "Rest API",
+    ],
+    category: "web_app",
+    github: "https://github.com/Abi-097/modern_website_ui-ux.git",
+    webapp: "https://modern-website-ui-ux.vercel.app/",
   },
   {
     id: 1,
